@@ -35,9 +35,9 @@
 
         <div class="main-block__column main-block__column--2">
 
-            <div class="switcher">
-                <button class="switcher__button button">MONTHLY</button>
-                <button class="switcher__button">YEARLY</button>
+            <div class="switcher" id="switcher">
+                <button class="switcher__button button" data-switcher="month">MONTHLY</button>
+                <button class="switcher__button" data-switcher="year">YEARLY</button>
             </div>
 
         </div>
@@ -50,7 +50,7 @@
 
             <div class="card">
                 <div class="card__body">
-                    <h4 class="card__top-price">$19 <span>/month</span></h4>
+                    <h4 class="card__top-price" id="card-start">$19 <span>/month</span></h4>
 
                     <h4 class="card__title">Starter</h4>
                     <span class="card__subtitle">Unleash the power of automation.</span>
@@ -71,7 +71,7 @@
             <div class="card">
 
                 <div class="card__body">
-                    <h4 class="card__top-price">$54 <span>/month</span></h4>
+                    <h4 class="card__top-price" id="card-professional">$54 <span>/month</span></h4>
 
                     <h4 class="card__title">Professional</h4>
                     <span class="card__subtitle">Advanced tools to take your work to the next level.</span>
@@ -95,7 +95,7 @@
                 <span class="card__ads">MOST POPULAR</span>
 
                 <div class="card__body">
-                    <h4 class="card__top-price">$89 <span>/month</span></h4>
+                    <h4 class="card__top-price" id="card-company">$89 <span>/month</span></h4>
 
                     <h4 class="card__title">Company</h4>
                     <span class="card__subtitle">Automation plus enterprise-grade features.</span>
@@ -122,5 +122,6 @@
 
 </main>
 
+<script src="script.js"> </script>
 </body>
 </html>
