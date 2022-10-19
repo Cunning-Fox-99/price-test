@@ -170,9 +170,11 @@ button {
 }
 
 main {
-    max-width: 970px;
+    max-width: 1000px;
     width: 100%;
     margin-top: 70px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -185,6 +187,7 @@ main {
 
 .main-block__column--1 {
     width: 65%;
+    margin-right: 10px;
 }
 
 .main-block__title {
@@ -360,4 +363,112 @@ main {
 .card--dark .card__button {
     width: 99%;
     margin-top: 23px;
+}
+
+@media (max-width: 990px)  {
+    .card {
+        width: 31%;
+    }
+
+    .card--dark {
+        width: 36%;
+    }
+}
+@media (max-width: 900px)  {
+
+    .card-block {
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+    .card-block__wrapper {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 100%;
+    }
+
+    .card {
+        max-width: 272px;
+        width: 100%;
+        height: auto;
+    }
+
+    .card:not(:last-child) {
+        margin-bottom: 48px;
+    }
+
+    .card__button {
+        margin-top: 38px;
+    }
+
+    .card__ads {
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card--dark .card__body {
+        margin-top: 67px;
+    }
+}
+
+@media (max-width: 860px)  {
+
+    .header__button {
+        display: none;
+    }
+    
+}
+
+@media (max-width: 768px)  {
+
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .mobile-button__button {
+        height: 2px;
+    }
+
+    .mobile-button__button::after, .mobile-button__button::before {
+        height: 2px;
+    }
+
+    .mobile-button__button::after {
+        top: -7px;
+    }
+
+    .mobile-button__button::before {
+        bottom: -7px;
+    }
+
+    .main-block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-block__column {
+        width: 100%;
+    }
+
+    .main-block__column--1 {
+        margin-right: 0;
+        margin-bottom: 35px;
+    }
+
+    .main-block__column--2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-block__title {
+        font-size: 39px;
+    }
+
+    .card-block {
+        margin-top: 32px;
+    }
 }
