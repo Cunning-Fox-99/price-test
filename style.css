@@ -369,11 +369,20 @@ main {
 
 @media (max-width: 990px)  {
     .card {
-        width: 31%;
+        width: 45%;
+        height: 400px;
     }
 
     .card--dark {
-        width: 36%;
+        margin-top: 25px;
+        width: 45%;
+        height: 495px;
+    }
+
+    .card-block__wrapper {
+        flex-wrap: wrap;
+        height: auto;
+        width: 100%;
     }
 }
 @media (max-width: 900px)  {
@@ -381,13 +390,6 @@ main {
     .card-block {
         padding-left: 28px;
         padding-right: 28px;
-    }
-
-    .card-block__wrapper {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        width: 100%;
     }
 
     .card {
@@ -472,5 +474,13 @@ main {
 
     .card-block {
         margin-top: 32px;
+    }
+}
+
+@media (max-width: 680px)  {
+
+    .card-block__wrapper {
+        flex-direction: column;
+        align-items: center;
     }
 }
