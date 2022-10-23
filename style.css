@@ -367,6 +367,10 @@ main {
     margin-top: 23px;
 }
 
+.card--dark .card__list-item::after {
+    content: url("./svg/list-2.svg");
+}
+
 @media (max-width: 990px)  {
     .card {
         width: 45%;
